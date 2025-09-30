@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Charity Events</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script defer src="config.js"></script>
+  <script defer src="js/api.js"></script>
+  <script defer src="js/search.js"></script>
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="container">
+    <!-- 修改 Logo 为图片 + 文字 -->
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Charity Hub Logo">
+      <span>Charity Hub</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="search.html">Search</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="container">
+  <h1>Search Events</h1>
+  <fieldset style="margin-bottom:1rem;">
+    <div class="grid" style="grid-template-columns: repeat(auto-fit,minmax(220px,1fr));">
+      <div>
+        <label for="q">Keyword</label>
+        <input id="q" placeholder="e.g., run, gala, concert"/>
+      </div>
+      <div>
+        <label for="location">Location</label>
+        <input id="location" placeholder="city, state, postcode"/>
+      </div>
+      <div>
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="">Any</option>
+        </select>
+      </div>
+      <div>
+        <label for="date_from">Date From</label>
+        <input id="date_from" type="date"/>
+      </div>
+      <div>
+        <label for="date_to">Date To</label>
+        <input id="date_to" type="date"/>
+      </div>
+    </div>
+    <div class="row" style="margin-top: .8rem;">
+      <button id="searchBtn" class="btn">Search</button>
+      <button id="clearBtn" class="btn secondary" type="button">Clear Filters</button>
+    </div>
+  </fieldset>
+  <div id="result-alert" class="alert" style="display:none;"></div>
+  <div id="results" class="grid"></div>
+</section>
+</body>
+</html>

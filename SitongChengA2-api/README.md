@@ -9,7 +9,7 @@
    - Run `sql/charityevents_db.sql` in MySQL.
 
 2. Configure environment:
-   - Copy `.env.sample` to `.env` and fill DB credentials.
+   - Write`.env` and fill DB credentials.
 
 3. Install & run:
 ```bash

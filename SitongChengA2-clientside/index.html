@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity Events - Home</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script defer src="config.js"></script>
+  <script defer src="js/api.js"></script>
+  <script defer src="js/home.js"></script>
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="container">
+    <!-- 修改 logo -->
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Charity Hub Logo">
+      <span>Charity Hub</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="search.html">Search</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <header class="hero container">
+    <h1>Welcome to Charity Hub</h1>
+    <p class="muted">We connect charitable organisations with caring people. Explore events, learn about causes, and make an impact.</p>
+  </header>
+  <section class="container">
+    <h2>Active & Upcoming Events</h2>
+    <div id="home-events" class="grid"></div>
+    <p class="muted" style="margin-top:1rem;">Events marked as <span class="badge muted">Past</span> have already happened; suspended events are not shown.</p>
+  </section>
+  <footer class="container footer">
+    <p>&copy; 2025 Charity Hub </p>
+  </footer>
+</body>
+</html>

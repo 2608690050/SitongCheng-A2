@@ -1,0 +1,40 @@
+:root { --primary:#2b6cb0; --bg:#f7fafc; --card:#ffffff; --muted:#718096;}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#1a202c}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.navbar{background:#fff;border-bottom:1px solid #e2e8f0;position:sticky;top:0;z-index:10}
+.navbar .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;text-decoration:none;color:var(--primary)}
+.nav-menu{display:flex;gap:1rem;list-style:none;padding:0;margin:0}
+.nav-link{text-decoration:none;color:#2d3748;padding:.5rem .75rem;border-radius:.5rem}
+.nav-link:hover{background:#edf2f7}
+.hero{padding:2rem 0;display:grid;gap:.75rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid #edf2f7;border-radius:1rem;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;height:160px;object-fit:cover}
+.card .p{padding:1rem;display:flex;flex-direction:column;gap:.5rem}
+.badge{display:inline-block;font-size:.75rem;color:#fff;background:var(--primary);padding:.2rem .5rem;border-radius:.5rem}
+.badge.muted{background:#4a5568}
+.row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.muted{color:var(--muted);font-size:.9rem}
+.btn{background:var(--primary);color:#fff;text-decoration:none;padding:.6rem .9rem;border-radius:.6rem;display:inline-block}
+.btn.secondary{background:#4a5568}
+label{font-weight:600}
+input,select{padding:.6rem .7rem;width:100%;border:1px solid #e2e8f0;border-radius:.6rem}
+fieldset{border:1px solid #e2e8f0;border-radius:.8rem;padding:1rem}
+.progress-wrap{background:#edf2f7;border-radius:.6rem;height:10px;overflow:hidden}
+.progress{height:100%;background:var(--primary);width:0%}
+.footer{color:#718096;padding:2rem 0}
+.alert{padding:.75rem 1rem;background:#fff3cd;border:1px solid #ffeeba;color:#856404;border-radius:.6rem}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* 图片和文字间距 */
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.logo img {
+  height: 50px; /* 控制 logo 图片大小 */
+  display: block;
+}
